@@ -110,11 +110,6 @@ const UI = (function () {
         }
     }
 
-    // updateDisplay :: {WeatherData} -> No Return Value
-    const updateDisplay = data => {
-
-    };
-
     // displayToTodaysDate :: String -> No Return Value 
     const displayToTodaysDate = date => {
         let index = days.indexOf(date);
