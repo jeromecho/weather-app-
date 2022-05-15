@@ -46,16 +46,13 @@ async function makePage() {
 }
 
 async function loadWeatherData () {
-    while (true) {
-        try {
-            let coords; 
-            coords = await getCoordinates(city);
-            let weatherData = await getWeather(coords);
-            return weatherData;
-            break;
-        } catch {
-            alert("Please try a different city.");
-        }
+    try {
+        let coords; 
+        coords = await getCoordinates(city);
+        let weatherData = await getWeather(coords);
+        return weatherData;
+    } catch {
+        alert("Please try a different city.");
     }
 }
 
