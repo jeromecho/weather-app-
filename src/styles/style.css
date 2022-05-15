@@ -1,0 +1,111 @@
+html, body {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    position: relative;
+}
+
+#header > p {
+    font-size: 1rem;
+    min-width: 20rem;
+    position: absolute;
+    text-align: center;
+    top: 1.5rem;
+}
+
+#hero-container {
+    height: 40%;
+}
+
+#hero-container > #hero > #search-container {
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 2.2rem;
+    width: 25rem;
+}
+
+#hero-container > #hero > #search-container > #search {
+    border: none;
+    background-color: white;
+    min-height: 2rem;
+    width: 20rem;
+}
+
+#hero-container > #hero > #search-container > #magnifying-glass {
+    height: 1.9rem;
+    max-height: 2rem;
+    opacity: 0.5;
+    transition: 300ms;
+}
+
+#hero-container > #hero > #search-container > #magnifying-glass:hover {
+    height: 2rem;
+    opacity: 1;
+}
+
+#display-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#display-container > #display {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#display > * {
+    font-size: 2rem;
+    margin: 1em;
+}
+
+.date-weather {
+    align-items: center;
+    display: flex;
+    margin: none;
+    min-width: 5rem;
+    max-height: 80%;
+    flex-direction: column;
+    width: 80%;
+}
+
+.date-weather > img {
+    height: 40%;
+    min-height: 4rem;
+    width: 100%;
+}
+
+.date-weather p {
+    text-align: center;
+}
+
+.date-weather .max-temp {
+    font-size: 2rem;
+}
+
+.date-weather .min-temp {
+    font-size: 1.5rem;
+}
+
+/* selects day of the week text */
+.date-weather > p {
+    bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+
+
